@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  application:
+    name: microservice-dept-dev
+  profiles: dev
+server:
+  port: 8003
+
+---
+spring:
+  profiles: test
+  application:
+    name: microservice-dept-test
+server:
+  port: 8004
